@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=DESKTOP-20U3N4B\SQLEXPRESS;Initial Catalog=cine4;Integrated Security=True;TrustServerCertificate=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="desktop-20u3n4b\sqlexpress.cine4.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="desktop-20u3n4b\sqlexpress.cine4.dbo" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COMPROBANTES.ID_COMPROBANTE, COMPROBANTES.FECHA, DETALLE_COMPROBANTE.precio_total, PELICULAS.TITULO, CLIENTES.NOMBRE_CLIENTE, CLIENTES.APELLIDO_CLIENTE
+FROM     COMPROBANTES INNER JOIN
+                  DETALLE_COMPROBANTE ON COMPROBANTES.ID_COMPROBANTE = DETALLE_COMPROBANTE.id_comprobante INNER JOIN
+                  PELICULAS ON DETALLE_COMPROBANTE.id_pelicula = PELICULAS.ID_PELICULA INNER JOIN
+                  CLIENTES ON COMPROBANTES.ID_CLIENTE = CLIENTES.ID_CLIENTE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_COMPROBANTE" DataSetColumn="ID_COMPROBANTE" />
+              <Mapping SourceColumn="FECHA" DataSetColumn="FECHA" />
+              <Mapping SourceColumn="precio_total" DataSetColumn="precio_total" />
+              <Mapping SourceColumn="TITULO" DataSetColumn="TITULO" />
+              <Mapping SourceColumn="NOMBRE_CLIENTE" DataSetColumn="NOMBRE_CLIENTE" />
+              <Mapping SourceColumn="APELLIDO_CLIENTE" DataSetColumn="APELLIDO_CLIENTE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet2" msprop:Generator_DataSetName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_UserTableName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_COMPROBANTE" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID_COMPROBANTE" msprop:Generator_ColumnPropNameInTable="ID_COMPROBANTEColumn" msprop:Generator_ColumnVarNameInTable="columnID_COMPROBANTE" msprop:Generator_UserColumnName="ID_COMPROBANTE" type="xs:int" />
+              <xs:element name="FECHA" msprop:Generator_ColumnPropNameInRow="FECHA" msprop:Generator_ColumnPropNameInTable="FECHAColumn" msprop:Generator_ColumnVarNameInTable="columnFECHA" msprop:Generator_UserColumnName="FECHA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="precio_total" msprop:Generator_ColumnPropNameInRow="precio_total" msprop:Generator_ColumnPropNameInTable="precio_totalColumn" msprop:Generator_ColumnVarNameInTable="columnprecio_total" msprop:Generator_UserColumnName="precio_total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TITULO" msprop:Generator_ColumnPropNameInRow="TITULO" msprop:Generator_ColumnPropNameInTable="TITULOColumn" msprop:Generator_ColumnVarNameInTable="columnTITULO" msprop:Generator_UserColumnName="TITULO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMBRE_CLIENTE" msprop:Generator_ColumnPropNameInRow="NOMBRE_CLIENTE" msprop:Generator_ColumnPropNameInTable="NOMBRE_CLIENTEColumn" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_CLIENTE" msprop:Generator_UserColumnName="NOMBRE_CLIENTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APELLIDO_CLIENTE" msprop:Generator_ColumnPropNameInRow="APELLIDO_CLIENTE" msprop:Generator_ColumnPropNameInTable="APELLIDO_CLIENTEColumn" msprop:Generator_ColumnVarNameInTable="columnAPELLIDO_CLIENTE" msprop:Generator_UserColumnName="APELLIDO_CLIENTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:ID_COMPROBANTE" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
