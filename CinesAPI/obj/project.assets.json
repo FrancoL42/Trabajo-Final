@@ -703,11 +703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\CINE\\TPCine\\CinesAPI\\CinesAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\carpeta cine\\TrabajoFinal\\CinesAPI\\CinesAPI.csproj",
       "projectName": "CinesAPI",
-      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\CINE\\TPCine\\CinesAPI\\CinesAPI.csproj",
+      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\carpeta cine\\TrabajoFinal\\CinesAPI\\CinesAPI.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\CINE\\TPCine\\CinesAPI\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\carpeta cine\\TrabajoFinal\\CinesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -725,8 +725,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\OneDrive\\Escritorio\\CINE\\TPCine\\CinesBackend\\CinesBackend.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\CINE\\TPCine\\CinesBackend\\CinesBackend.csproj"
+            "C:\\Users\\Usuario\\OneDrive\\Escritorio\\carpeta cine\\TrabajoFinal\\CinesBackend\\CinesBackend.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\carpeta cine\\TrabajoFinal\\CinesBackend\\CinesBackend.csproj"
             }
           }
         }
