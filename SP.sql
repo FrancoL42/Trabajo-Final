@@ -338,3 +338,50 @@ as
 begin
 select * from TIPOS_DOC
 end 
+
+-----
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER proc [dbo].[SP_CONSULTAR_CLIENTES]
+as
+begin
+select * from clientes
+where estado = 'Activo'
+end
+
+create proc SP_BAJA_CLIENTE
+@idCliente int
+as
+begin
+update clientes
+set estado = 'Inactivo'
+where id_cliente = @idCliente
+end
+
+
+
+create PROC SP_CONSULTAR_FUNCIONES_SINPARAM
+as 
+begin
+select * from funciones f
+join peliculas p on p.id_pelicula = f.id_pelicula
+end
+
+---
+alter PROC SP_CONSULTAR_FUNCIONES_SINPARAM
+as 
+begin
+select * from funciones f
+join peliculas p on p.id_pelicula = f.id_pelicula
+end
+---
+create proc SP_BAJA_CLIENTE
+@idCliente int
+as
+begin
+update clientes
+set estado = 'Inactivo'
+where id_cliente = @idCliente
+end
