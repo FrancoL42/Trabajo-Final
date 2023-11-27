@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BC84BD7-EEE8-4AE3-A710-EAFED185E2C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TPCine</RootNamespace>
+    <AssemblyName>TPCine</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbmSoporte\AbmFunciones\FrmAltaFunciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmFunciones\FrmAltaFunciones.Designer.cs">
+      <DependentUpon>FrmAltaFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmFunciones\FrmBajaFunciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmFunciones\FrmBajaFunciones.Designer.cs">
+      <DependentUpon>FrmBajaFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmFunciones\FrmModificarFunciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmFunciones\FrmModificarFunciones.Designer.cs">
+      <DependentUpon>FrmModificarFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmPeliculas\FrmAltaPeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmPeliculas\FrmAltaPeliculas.Designer.cs">
+      <DependentUpon>FrmAltaPeliculas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmPeliculas\FrmBajaPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmPeliculas\FrmBajaPelicula.Designer.cs">
+      <DependentUpon>FrmBajaPelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmPeliculas\FrmModificarPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmPeliculas\FrmModificarPelicula.Designer.cs">
+      <DependentUpon>FrmModificarPelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmSalas\FrmAltaSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmSalas\FrmAltaSalas.Designer.cs">
+      <DependentUpon>FrmAltaSalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmSalas\FrmModificarSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmSalas\FrmModificarSalas.Designer.cs">
+      <DependentUpon>FrmModificarSalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmSalas\FrmBajaSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSoporte\AbmSalas\FrmBajaSalas.Designer.cs">
+      <DependentUpon>FrmBajaSalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm\FrmBajaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm\FrmBajaCliente.Designer.cs">
+      <DependentUpon>FrmBajaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm\FrmComprarEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm\FrmComprarEntrada.Designer.cs">
+      <DependentUpon>FrmComprarEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm\FrmModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm\FrmModificarCliente.Designer.cs">
+      <DependentUpon>FrmModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Http\ClienteSingleton.cs" />
+    <Compile Include="Presentacion\FrmAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmAdministrador.Designer.cs">
+      <DependentUpon>FrmAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FrmIniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmIniciarSesion.Designer.cs">
+      <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FrmNosotros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmNosotros.Designer.cs">
+      <DependentUpon>FrmNosotros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\DsPeliculas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPeliculas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmReportePeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReportePeliculas.Designer.cs">
+      <DependentUpon>FrmReportePeliculas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteTicket.Designer.cs">
+      <DependentUpon>FrmReporteTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="AbmSoporte\AbmFunciones\FrmAltaFunciones.resx">
+      <DependentUpon>FrmAltaFunciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSoporte\AbmPeliculas\FrmAltaPeliculas.resx">
+      <DependentUpon>FrmAltaPeliculas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSoporte\AbmPeliculas\FrmBajaPelicula.resx">
+      <DependentUpon>FrmBajaPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSoporte\AbmPeliculas\FrmModificarPelicula.resx">
+      <DependentUpon>FrmModificarPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSoporte\AbmSalas\FrmAltaSalas.resx">
+      <DependentUpon>FrmAltaSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSoporte\AbmSalas\FrmBajaSalas.resx">
+      <DependentUpon>FrmBajaSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSoporte\AbmSalas\FrmModificarSalas.resx">
+      <DependentUpon>FrmModificarSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm\FrmBajaCliente.resx">
+      <DependentUpon>FrmBajaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm\FrmComprarEntrada.resx">
+      <DependentUpon>FrmComprarEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm\FrmModificarCliente.resx">
+      <DependentUpon>FrmModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmAdministrador.resx">
+      <DependentUpon>FrmAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmIniciarSesion.resx">
+      <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmNosotros.resx">
+      <DependentUpon>FrmNosotros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\FrmReportePeliculas.resx">
+      <DependentUpon>FrmReportePeliculas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmReporteTicket.resx">
+      <DependentUpon>FrmReporteTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\DsPeliculas.xsc">
+      <DependentUpon>DsPeliculas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DsPeliculas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPeliculas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DsPeliculas.xss">
+      <DependentUpon>DsPeliculas.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\imagen1.png" />
+    <None Include="Resources\bajolalluvia.jpg" />
+    <None Include="Resources\boton_menu.png" />
+    <None Include="Resources\boton_nosotros.png" />
+    <None Include="Resources\boton_reporte.png" />
+    <None Include="Resources\boton_salir.png" />
+    <None Include="Resources\boton_soporte.png" />
+    <None Include="Resources\boton_transaccion.png" />
+    <None Include="Resources\elpadri.jpg" />
+    <None Include="Resources\gonewi.jpg" />
+    <None Include="Resources\gr-stocks-q8P8YoR6erg-unsplash.jpg" />
+    <None Include="Resources\Helado.jpg" />
+    <None Include="Resources\HELADO2.jpg" />
+    <None Include="Resources\Hot Dog.jpg" />
+    <None Include="Resources\Icon_Login.png" />
+    <None Include="Resources\Icon_Registrarme.png" />
+    <None Include="Resources\ironman.png" />
+    <None Include="Resources\Nachos.jpg" />
+    <None Include="Resources\Palomitas.jpg" />
+    <None Include="Resources\Palomitas2.jpg" />
+    <None Include="Resources\pantalla-de-cine.png" />
+    <None Include="Resources\pelicula.png" />
+    <None Include="Resources\Pochoclos.bmp" />
+    <None Include="Resources\Pretzel.jpg" />
+    <None Include="Resources\Refresco.png" />
+    <None Include="Resources\silla.png" />
+    <None Include="Resources\spiderman.png" />
+    <None Include="Resources\superman.png" />
+    <None Include="Resources\Icon_IniciarSesion.png" />
+    <None Include="Resources\boton_transaccion1.png" />
+    <None Include="Resources\Butaca.png" />
+    <None Include="Resources\Butaca1.png" />
+    <None Include="Resources\Caramelos.jpg" />
+    <None Include="Resources\casablan.jpg" />
+    <None Include="Resources\Chocolate Aguila.jpg" />
+    <None Include="Resources\Icon_Login1.png" />
+    <None Include="Resources\Icon_Registrarme1.png" />
+    <None Include="Resources\ironman1.png" />
+    <None Include="Resources\silla1.png" />
+    <None Include="Resources\spiderman1.png" />
+    <None Include="Resources\superman1.png" />
+    <None Include="Resources\boton_menu1.png" />
+    <None Include="Resources\boton_nosotros1.png" />
+    <None Include="Resources\boton_reporte1.png" />
+    <None Include="Resources\boton_salir1.png" />
+    <None Include="Resources\boton_soporte1.png" />
+    <None Include="Resources\agus.jpg" />
+    <None Include="Resources\manu.jpg" />
+    <None Include="Resources\IMG_7466 %281%29.JPG" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\1663634574808.jpeg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CinesBackend\CinesBackend.csproj">
+      <Project>{0EBF549C-0043-472B-A6F7-01FD1A1616C5}</Project>
+      <Name>CinesBackend</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

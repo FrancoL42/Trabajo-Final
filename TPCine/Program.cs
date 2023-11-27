@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using TPCine.Abm;
+using TPCine.AbmSoporte.AbmFunciones;
+using TPCine.AbmSoporte.AbmPeliculas;
+using TPCine.AbmSoporte.AbmSalas;
+using TPCine.Presentacion;
+using TPCine.Reportes;
+
+namespace TPCine
+{
+    internal static class Program
+    {
+        /// <summary>
+        /// Punto de entrada principal para la aplicación.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new FrmCliente());
+        }
+    }
+}
