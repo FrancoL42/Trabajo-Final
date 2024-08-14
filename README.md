@@ -1,4 +1,5 @@
-# TrabajoFinal-Cines
+# TrabajoFinal: Complejo de Cines
+Catedra: Programación II
 Numero de Grupo: 9
 Integrantes del Grupo: Lentini Franco 
                        Manuel Artusa 
