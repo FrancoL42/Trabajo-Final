@@ -1,4 +1,4 @@
-# TrabajoFinal: Complejo de Cines
+# Trabajo Final: Complejo de Cines
 Catedra: Programación II
 Numero de Grupo: 9
 Integrantes del Grupo: Lentini Franco 
